@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Future Plot
 
-## Getting Started
+AI、ロボット、政治、経済制度の変化が社会をどう作り変えるかを扱う「未来構想メディア」の初期実装です。  
+単なる AI ニュースの要約ではなく、技術進歩を制度設計と社会変動の視点から読むことを目的にしています。
 
-First, run the development server:
+## Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- App Router
+
+## Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ブラウザで `http://localhost:3000` を開くと確認できます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Initial Direction
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- ヒーローでメディアの立ち位置を明示
+- 扱うテーマを 3 本柱で整理
+- 初期特集候補をカード形式で提示
+- X と長文メディアをどう接続するかを明文化
 
-## Learn More
+## Deploy
 
-To learn more about Next.js, take a look at the following resources:
+最短は Vercel です。GitHub に push した後、Vercel にリポジトリ連携すると自動デプロイできます。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ビルドが通れば、そのまま Vercel へのデプロイ対象にできます。
 
-## Deploy on Vercel
+## GitHub Push
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+この環境では GitHub CLI と認証情報が未設定なので、リモートリポジトリの自動作成までは未完です。  
+次のどちらかが必要です。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. `gh` をインストールして GitHub にログインする
+2. GitHub 上で空リポジトリを作って、その URL を `git remote add origin ...` で接続する
+
+接続後の基本コマンド:
+
+```bash
+git branch -M main
+git remote add origin <YOUR_REPO_URL>
+git add .
+git commit -m "Initial Future Plot site"
+git push -u origin main
+```
