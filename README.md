@@ -30,6 +30,10 @@ npm run dev
 
 最短は Vercel です。GitHub に push した後、Vercel にリポジトリ連携すると自動デプロイできます。
 
+公開 URL:
+
+- https://futureplot.vercel.app/
+
 ```bash
 npm run build
 ```
