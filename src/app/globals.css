@@ -1,12 +1,10 @@
 :root {
-  --background: #f3efe5;
-  --foreground: #13110d;
-  --muted: #655d52;
-  --panel: rgba(255, 252, 244, 0.72);
-  --border: rgba(19, 17, 13, 0.12);
-  --accent: #bc5f37;
-  --accent-strong: #9a4520;
-  --shadow: 0 24px 60px rgba(46, 32, 10, 0.12);
+  --background: #f3f0fa;
+  --foreground: #130f21;
+  --muted: #5f5774;
+  --panel: rgba(255, 255, 255, 0.86);
+  --border: rgba(47, 33, 84, 0.14);
+  --shadow: 0 18px 40px rgba(58, 37, 110, 0.14);
 }
 
 html {
@@ -30,9 +28,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image:
-    radial-gradient(circle at top left, rgba(188, 95, 55, 0.18), transparent 28%),
-    radial-gradient(circle at 85% 12%, rgba(25, 88, 121, 0.16), transparent 20%),
-    linear-gradient(180deg, #f8f3ea 0%, #efe6d6 100%);
+    radial-gradient(circle at 0% 0%, rgba(166, 127, 245, 0.24), transparent 35%),
+    radial-gradient(circle at 100% 10%, rgba(139, 93, 230, 0.2), transparent 30%),
+    linear-gradient(180deg, #f8f6ff 0%, #efebf8 100%);
 }
 
 * {

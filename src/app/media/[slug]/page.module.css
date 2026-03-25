@@ -1,0 +1,51 @@
+.page {
+  width: min(800px, 100% - 24px);
+  margin: 24px auto 64px;
+  display: grid;
+  gap: 18px;
+}
+
+.back {
+  color: #5a46a0;
+  font-weight: 600;
+}
+
+.header,
+.body {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.header {
+  padding: 30px;
+  background: #f8f4ff;
+}
+
+.header p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.header h1 {
+  margin: 10px 0 14px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.body {
+  padding: 34px;
+  background: #fff;
+}
+
+.body h2 {
+  margin-top: 22px;
+  font-size: 1.3rem;
+}
+
+.body p {
+  margin-top: 10px;
+  line-height: 2;
+  color: #222;
+}
